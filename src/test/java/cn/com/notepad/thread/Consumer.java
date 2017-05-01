@@ -1,7 +1,8 @@
 package cn.com.notepad.thread;
+
 /**
  * 消费者
- * @author admin
+ * @author yugy
  *
  */
 public class Consumer implements Runnable{

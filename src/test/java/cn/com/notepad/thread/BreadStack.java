@@ -1,10 +1,8 @@
 package cn.com.notepad.thread;
 
-
-
 /**
  * 面包框
- * @author admin
+ * @author yugy
  *
  */
 public class BreadStack {
@@ -13,7 +11,7 @@ public class BreadStack {
 	
 	Bread[] breads = new Bread[10];
 	
-	//生产面包
+	//生产面包方法
 	public synchronized void push(Bread bread){
 		while (index == breads.length){
 			try {
@@ -27,7 +25,7 @@ public class BreadStack {
 		index++;
 	}
 	
-	//消费面包
+	//消费面包方法
 	public synchronized Bread pop(){
 		while(index == 0){
 			try {

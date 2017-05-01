@@ -1,7 +1,8 @@
 package cn.com.notepad.thread;
+
 /**
  * 生产者
- * @author admin
+ * @author yugy
  *
  */
 public class Producer implements Runnable{
